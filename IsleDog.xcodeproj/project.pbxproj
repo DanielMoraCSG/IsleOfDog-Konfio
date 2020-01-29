@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E21FDC923DFE8910029054C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDC823DFE8910029054C /* AppDelegate.swift */; };
+		2E21FDCB23DFE8910029054C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDCA23DFE8910029054C /* SceneDelegate.swift */; };
+		2E21FDD223DFE8940029054C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E21FDD123DFE8940029054C /* Assets.xcassets */; };
+		2E21FDD523DFE8940029054C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E21FDD323DFE8940029054C /* LaunchScreen.storyboard */; };
+		2E21FDE023DFE8950029054C /* IsleDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDDF23DFE8950029054C /* IsleDogTests.swift */; };
+		2E21FDF223DFE9AB0029054C /* ISD_ListOfDogs_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDF123DFE9AB0029054C /* ISD_ListOfDogs_VC.swift */; };
+		2E21FDF423DFEA170029054C /* ISD_ListOfDogs_Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDF323DFEA170029054C /* ISD_ListOfDogs_Interactor.swift */; };
+		2E21FDF623DFEA240029054C /* ISD_ListOfDogs_Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDF523DFEA240029054C /* ISD_ListOfDogs_Presenter.swift */; };
+		2E21FDF823DFEA330029054C /* ISD_ListOfDogs_Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDF723DFEA330029054C /* ISD_ListOfDogs_Router.swift */; };
+		2E21FDFA23DFEA4D0029054C /* ISD_Dogs_Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDF923DFEA4D0029054C /* ISD_Dogs_Entity.swift */; };
+		2E21FDFC23DFEA6B0029054C /* ISD_ListOfDogs_Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDFB23DFEA6B0029054C /* ISD_ListOfDogs_Protocols.swift */; };
+		2E21FE0023DFF3DD0029054C /* UI_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FDFF23DFF3DD0029054C /* UI_Extensions.swift */; };
+		2E21FE0223DFF7700029054C /* ColorCompability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FE0123DFF7700029054C /* ColorCompability.swift */; };
+		2E21FE0423DFFF410029054C /* ISD_TableView_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FE0323DFFF410029054C /* ISD_TableView_View.swift */; };
+		2E21FE0623E008450029054C /* ISD_DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FE0523E008450029054C /* ISD_DogCell.swift */; };
+		2E21FE0823E0267E0029054C /* Generic_Loader_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21FE0723E0267E0029054C /* Generic_Loader_iOS.swift */; };
+		2EAA182623E1497000BBB739 /* ISD_Dogs_Entity_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA182523E1497000BBB739 /* ISD_Dogs_Entity_Test.swift */; };
+		2EAA182823E14F0100BBB739 /* ISD_GetRouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA182723E14F0100BBB739 /* ISD_GetRouterView.swift */; };
+		B0745CF44542195AF408514B /* Pods_IsleDogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9B031B10341558C3096063 /* Pods_IsleDogTests.framework */; };
+		B7A27C751948917FA2456165 /* Pods_IsleDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46B1985AB89E5C70B4714B9 /* Pods_IsleDog.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E21FDDC23DFE8950029054C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E21FDBD23DFE8910029054C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E21FDC423DFE8910029054C;
+			remoteInfo = IsleDog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E21FDC523DFE8910029054C /* IsleDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IsleDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E21FDC823DFE8910029054C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E21FDCA23DFE8910029054C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2E21FDD123DFE8940029054C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E21FDD423DFE8940029054C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E21FDD623DFE8940029054C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E21FDDB23DFE8950029054C /* IsleDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsleDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E21FDDF23DFE8950029054C /* IsleDogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsleDogTests.swift; sourceTree = "<group>"; };
+		2E21FDE123DFE8950029054C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E21FDF123DFE9AB0029054C /* ISD_ListOfDogs_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_ListOfDogs_VC.swift; sourceTree = "<group>"; };
+		2E21FDF323DFEA170029054C /* ISD_ListOfDogs_Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_ListOfDogs_Interactor.swift; sourceTree = "<group>"; };
+		2E21FDF523DFEA240029054C /* ISD_ListOfDogs_Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_ListOfDogs_Presenter.swift; sourceTree = "<group>"; };
+		2E21FDF723DFEA330029054C /* ISD_ListOfDogs_Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_ListOfDogs_Router.swift; sourceTree = "<group>"; };
+		2E21FDF923DFEA4D0029054C /* ISD_Dogs_Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_Dogs_Entity.swift; sourceTree = "<group>"; };
+		2E21FDFB23DFEA6B0029054C /* ISD_ListOfDogs_Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_ListOfDogs_Protocols.swift; sourceTree = "<group>"; };
+		2E21FDFF23DFF3DD0029054C /* UI_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_Extensions.swift; sourceTree = "<group>"; };
+		2E21FE0123DFF7700029054C /* ColorCompability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCompability.swift; sourceTree = "<group>"; };
+		2E21FE0323DFFF410029054C /* ISD_TableView_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_TableView_View.swift; sourceTree = "<group>"; };
+		2E21FE0523E008450029054C /* ISD_DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_DogCell.swift; sourceTree = "<group>"; };
+		2E21FE0723E0267E0029054C /* Generic_Loader_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic_Loader_iOS.swift; sourceTree = "<group>"; };
+		2EAA182523E1497000BBB739 /* ISD_Dogs_Entity_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_Dogs_Entity_Test.swift; sourceTree = "<group>"; };
+		2EAA182723E14F0100BBB739 /* ISD_GetRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISD_GetRouterView.swift; sourceTree = "<group>"; };
+		40993232BBE46FC86E743BE7 /* Pods-IsleDogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsleDogTests.debug.xcconfig"; path = "Target Support Files/Pods-IsleDogTests/Pods-IsleDogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C00165E3357BFEEA4BF2417 /* Pods-IsleDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsleDog.release.xcconfig"; path = "Target Support Files/Pods-IsleDog/Pods-IsleDog.release.xcconfig"; sourceTree = "<group>"; };
+		93B4AC9097CF5FCCD9F54496 /* Pods-IsleDog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsleDog.debug.xcconfig"; path = "Target Support Files/Pods-IsleDog/Pods-IsleDog.debug.xcconfig"; sourceTree = "<group>"; };
+		A46B1985AB89E5C70B4714B9 /* Pods_IsleDog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsleDog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9B031B10341558C3096063 /* Pods_IsleDogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsleDogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2444DB47A47D1F841D7B17C /* Pods-IsleDogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsleDogTests.release.xcconfig"; path = "Target Support Files/Pods-IsleDogTests/Pods-IsleDogTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E21FDC223DFE8910029054C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A27C751948917FA2456165 /* Pods_IsleDog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E21FDD823DFE8950029054C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0745CF44542195AF408514B /* Pods_IsleDogTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E21FDBC23DFE8910029054C = {
+			isa = PBXGroup;
+			children = (
+				2E21FDC723DFE8910029054C /* IsleDog */,
+				2E21FDDE23DFE8950029054C /* IsleDogTests */,
+				2E21FDC623DFE8910029054C /* Products */,
+				DE813E64E0BC3239CECFB21A /* Pods */,
+				3092A17A433BE5EA18411D50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E21FDC623DFE8910029054C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDC523DFE8910029054C /* IsleDog.app */,
+				2E21FDDB23DFE8950029054C /* IsleDogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E21FDC723DFE8910029054C /* IsleDog */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDFD23DFF39B0029054C /* Utils */,
+				2E21FDEA23DFE92E0029054C /* ListOfDogs */,
+				2E21FDC823DFE8910029054C /* AppDelegate.swift */,
+				2E21FDCA23DFE8910029054C /* SceneDelegate.swift */,
+				2E21FDD123DFE8940029054C /* Assets.xcassets */,
+				2E21FDD323DFE8940029054C /* LaunchScreen.storyboard */,
+				2E21FDD623DFE8940029054C /* Info.plist */,
+			);
+			path = IsleDog;
+			sourceTree = "<group>";
+		};
+		2E21FDDE23DFE8950029054C /* IsleDogTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDDF23DFE8950029054C /* IsleDogTests.swift */,
+				2E21FDE123DFE8950029054C /* Info.plist */,
+				2EAA182523E1497000BBB739 /* ISD_Dogs_Entity_Test.swift */,
+				2EAA182723E14F0100BBB739 /* ISD_GetRouterView.swift */,
+			);
+			path = IsleDogTests;
+			sourceTree = "<group>";
+		};
+		2E21FDEA23DFE92E0029054C /* ListOfDogs */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDF023DFE96D0029054C /* Protocols */,
+				2E21FDEF23DFE9620029054C /* View */,
+				2E21FDEE23DFE95C0029054C /* Interactor */,
+				2E21FDED23DFE9550029054C /* Presenter */,
+				2E21FDEC23DFE94E0029054C /* Entity */,
+				2E21FDEB23DFE9450029054C /* Router */,
+			);
+			path = ListOfDogs;
+			sourceTree = "<group>";
+		};
+		2E21FDEB23DFE9450029054C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDF723DFEA330029054C /* ISD_ListOfDogs_Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2E21FDEC23DFE94E0029054C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDF923DFEA4D0029054C /* ISD_Dogs_Entity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2E21FDED23DFE9550029054C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDF523DFEA240029054C /* ISD_ListOfDogs_Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2E21FDEE23DFE95C0029054C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDF323DFEA170029054C /* ISD_ListOfDogs_Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2E21FDEF23DFE9620029054C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDF123DFE9AB0029054C /* ISD_ListOfDogs_VC.swift */,
+				2E21FE0323DFFF410029054C /* ISD_TableView_View.swift */,
+				2E21FE0523E008450029054C /* ISD_DogCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E21FDF023DFE96D0029054C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDFB23DFEA6B0029054C /* ISD_ListOfDogs_Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2E21FDFD23DFF39B0029054C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDFE23DFF3A50029054C /* iOS_Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2E21FDFE23DFF3A50029054C /* iOS_Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E21FDFF23DFF3DD0029054C /* UI_Extensions.swift */,
+				2E21FE0123DFF7700029054C /* ColorCompability.swift */,
+				2E21FE0723E0267E0029054C /* Generic_Loader_iOS.swift */,
+			);
+			path = iOS_Extensions;
+			sourceTree = "<group>";
+		};
+		3092A17A433BE5EA18411D50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A46B1985AB89E5C70B4714B9 /* Pods_IsleDog.framework */,
+				AD9B031B10341558C3096063 /* Pods_IsleDogTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE813E64E0BC3239CECFB21A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93B4AC9097CF5FCCD9F54496 /* Pods-IsleDog.debug.xcconfig */,
+				8C00165E3357BFEEA4BF2417 /* Pods-IsleDog.release.xcconfig */,
+				40993232BBE46FC86E743BE7 /* Pods-IsleDogTests.debug.xcconfig */,
+				D2444DB47A47D1F841D7B17C /* Pods-IsleDogTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E21FDC423DFE8910029054C /* IsleDog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E21FDE423DFE8950029054C /* Build configuration list for PBXNativeTarget "IsleDog" */;
+			buildPhases = (
+				25A86A87A4FA5849A532919E /* [CP] Check Pods Manifest.lock */,
+				2E21FDC123DFE8910029054C /* Sources */,
+				2E21FDC223DFE8910029054C /* Frameworks */,
+				2E21FDC323DFE8910029054C /* Resources */,
+				2D4898AF5792C4D672437CB4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IsleDog;
+			productName = IsleDog;
+			productReference = 2E21FDC523DFE8910029054C /* IsleDog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E21FDDA23DFE8950029054C /* IsleDogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E21FDE723DFE8950029054C /* Build configuration list for PBXNativeTarget "IsleDogTests" */;
+			buildPhases = (
+				0C62A6578312E9F5D487CA37 /* [CP] Check Pods Manifest.lock */,
+				2E21FDD723DFE8950029054C /* Sources */,
+				2E21FDD823DFE8950029054C /* Frameworks */,
+				2E21FDD923DFE8950029054C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E21FDDD23DFE8950029054C /* PBXTargetDependency */,
+			);
+			name = IsleDogTests;
+			productName = IsleDogTests;
+			productReference = 2E21FDDB23DFE8950029054C /* IsleDogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E21FDBD23DFE8910029054C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ISD_;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Daniel Isaac Mora Osorio";
+				TargetAttributes = {
+					2E21FDC423DFE8910029054C = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					2E21FDDA23DFE8950029054C = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 2E21FDC423DFE8910029054C;
+					};
+				};
+			};
+			buildConfigurationList = 2E21FDC023DFE8910029054C /* Build configuration list for PBXProject "IsleDog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E21FDBC23DFE8910029054C;
+			productRefGroup = 2E21FDC623DFE8910029054C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E21FDC423DFE8910029054C /* IsleDog */,
+				2E21FDDA23DFE8950029054C /* IsleDogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E21FDC323DFE8910029054C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E21FDD523DFE8940029054C /* LaunchScreen.storyboard in Resources */,
+				2E21FDD223DFE8940029054C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E21FDD923DFE8950029054C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C62A6578312E9F5D487CA37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IsleDogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25A86A87A4FA5849A532919E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IsleDog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D4898AF5792C4D672437CB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IsleDog/Pods-IsleDog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IsleDog/Pods-IsleDog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IsleDog/Pods-IsleDog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E21FDC123DFE8910029054C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E21FDF223DFE9AB0029054C /* ISD_ListOfDogs_VC.swift in Sources */,
+				2E21FE0223DFF7700029054C /* ColorCompability.swift in Sources */,
+				2E21FE0423DFFF410029054C /* ISD_TableView_View.swift in Sources */,
+				2E21FDF423DFEA170029054C /* ISD_ListOfDogs_Interactor.swift in Sources */,
+				2E21FDFC23DFEA6B0029054C /* ISD_ListOfDogs_Protocols.swift in Sources */,
+				2E21FE0823E0267E0029054C /* Generic_Loader_iOS.swift in Sources */,
+				2E21FDF623DFEA240029054C /* ISD_ListOfDogs_Presenter.swift in Sources */,
+				2E21FDC923DFE8910029054C /* AppDelegate.swift in Sources */,
+				2E21FE0023DFF3DD0029054C /* UI_Extensions.swift in Sources */,
+				2E21FDCB23DFE8910029054C /* SceneDelegate.swift in Sources */,
+				2E21FE0623E008450029054C /* ISD_DogCell.swift in Sources */,
+				2E21FDFA23DFEA4D0029054C /* ISD_Dogs_Entity.swift in Sources */,
+				2E21FDF823DFEA330029054C /* ISD_ListOfDogs_Router.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E21FDD723DFE8950029054C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAA182823E14F0100BBB739 /* ISD_GetRouterView.swift in Sources */,
+				2EAA182623E1497000BBB739 /* ISD_Dogs_Entity_Test.swift in Sources */,
+				2E21FDE023DFE8950029054C /* IsleDogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E21FDDD23DFE8950029054C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E21FDC423DFE8910029054C /* IsleDog */;
+			targetProxy = 2E21FDDC23DFE8950029054C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E21FDD323DFE8940029054C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E21FDD423DFE8940029054C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E21FDE223DFE8950029054C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E21FDE323DFE8950029054C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E21FDE523DFE8950029054C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B4AC9097CF5FCCD9F54496 /* Pods-IsleDog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DCK4SXD59;
+				INFOPLIST_FILE = IsleDog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.decotec.IsleDog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E21FDE623DFE8950029054C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C00165E3357BFEEA4BF2417 /* Pods-IsleDog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DCK4SXD59;
+				INFOPLIST_FILE = IsleDog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.decotec.IsleDog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E21FDE823DFE8950029054C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40993232BBE46FC86E743BE7 /* Pods-IsleDogTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DCK4SXD59;
+				INFOPLIST_FILE = IsleDogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.decotec.IsleDogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IsleDog.app/IsleDog";
+			};
+			name = Debug;
+		};
+		2E21FDE923DFE8950029054C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2444DB47A47D1F841D7B17C /* Pods-IsleDogTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DCK4SXD59;
+				INFOPLIST_FILE = IsleDogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.decotec.IsleDogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IsleDog.app/IsleDog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E21FDC023DFE8910029054C /* Build configuration list for PBXProject "IsleDog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E21FDE223DFE8950029054C /* Debug */,
+				2E21FDE323DFE8950029054C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E21FDE423DFE8950029054C /* Build configuration list for PBXNativeTarget "IsleDog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E21FDE523DFE8950029054C /* Debug */,
+				2E21FDE623DFE8950029054C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E21FDE723DFE8950029054C /* Build configuration list for PBXNativeTarget "IsleDogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E21FDE823DFE8950029054C /* Debug */,
+				2E21FDE923DFE8950029054C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E21FDBD23DFE8910029054C /* Project object */;
+}
